@@ -11,4 +11,5 @@ toy program built to use cosine similarity between users and an api built to uti
 
 
 
-![image](https://user-images.githubusercontent.com/28716728/137602781-2ebe849a-85b2-427f-aa2f-99e266853238.png)
+![image](https://user-images.githubusercontent.com/28716728/137602995-7f8f9a2f-54e8-4bd6-b6f8-15514cbc37d3.png)
+
