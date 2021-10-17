@@ -1,6 +1,9 @@
 # users_api
 toy program built to use cosine similarity between users and an api built to utilize it
 
+### Application Architecture:
+
+![image](https://user-images.githubusercontent.com/28716728/137602995-7f8f9a2f-54e8-4bd6-b6f8-15514cbc37d3.png)
 
 ### The goal of this is 
 
@@ -38,5 +41,5 @@ toy program built to use cosine similarity between users and an api built to uti
 ### If Time Permits
  - I'd like to investigate using Reinforcement Learning methods such as an Actor-Critic routine as is demonstrated in this 2020 paper, <a href='https://arxiv.org/pdf/1906.04281v2.pdf'>RACT: Towards Amortized Ranking-Critical Training for Collaborative Filtering, ICLR 2020</a> 
 
-![image](https://user-images.githubusercontent.com/28716728/137602995-7f8f9a2f-54e8-4bd6-b6f8-15514cbc37d3.png)
+
 
