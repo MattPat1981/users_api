@@ -13,7 +13,7 @@ class CreateUserSimsResponse:
     user_handle: int
     nearest_users: dict
 
-OPERATION_CREATE_USERSIMS: str: 'create-usersims'
+OPERATION_CREATE_USERSIMS: str = 'create-usersims'
 @app.route(f'/{OPERATION_CREATE_USERSIMS}', methods=['POST'])
 def create_usersims():
     payload = request.get_json()
@@ -33,6 +33,9 @@ generate_operation(path=OPERATION_CREATE_USERSIMS,
 
 spec_dict = spec.to_dict()
 
+import json
 
+api_definition = json.dumps(spec_dict, indent=2)
+api_gateway_client.import_rest_api(body=api_definition)
 
-
+api_gateway_client.put_rest_api(body=api_definition, mode='merge', restApiId=find_api_id(api_gateway_client,api_name))
