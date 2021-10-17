@@ -18,7 +18,7 @@ toy program built to use cosine similarity between users and an api built to uti
 
 ### Obstacles
 - There are not consistent tags offered to connect the actual course_id's to the courses that the students are offering assessment scores of
-- Challenge of aggregating data without overrunning the memory of the instance or machine
+- Challenge of aggregating data without overrunning the memory of the instance or machine was overcome by using pivot tables
 
 ### Helpful
 - The views table has the course_id field, allowing us to know 
@@ -32,6 +32,8 @@ toy program built to use cosine similarity between users and an api built to uti
     - Users that showed an interest in x, y, and z vectors (binary) 
     - then scored course n and m with score a and score b
     - Thus creating a user vector that can be measured against the other user vecotrs
+- Watch-Time or number of views might be interesting for a future model but might not be as relevant to an MVP
+- How complex can I get and still have useful cosine similarity scores?
 
 
 ![image](https://user-images.githubusercontent.com/28716728/137602995-7f8f9a2f-54e8-4bd6-b6f8-15514cbc37d3.png)
