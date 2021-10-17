@@ -1,6 +1,9 @@
 # users_api
 toy program built to use cosine similarity between users and an api built to utilize it
 
+### Application Architecture:
+
+![image](https://user-images.githubusercontent.com/28716728/137602995-7f8f9a2f-54e8-4bd6-b6f8-15514cbc37d3.png)
 
 ### The goal of this is 
 
@@ -9,7 +12,34 @@ toy program built to use cosine similarity between users and an api built to uti
 - to build a storage of the transformed dataset in DynamoDB
 - to build a model endpoint that will return the most similar users when a user_handle is entered
 
+### Strategy
+
+- I would like to make each course_id its own column
+ - Creating a User-Score Matrix
+- and then the users' assessment of each course be the data in that column (as a sparse matrix)
+- and use that to run a cosine similarity between all users
+
+### Obstacles
+- There are not consistent tags offered to connect the actual course_id's to the courses that the students are offering assessment scores of
+- Challenge of aggregating data without overrunning the memory of the instance or machine was overcome by using pivot tables
+
+### Helpful
+- The views table has the course_id field, allowing us to know 
+    - exactly how long each user viewed a course, and 
+    - how often they viewed a course, and 
+    - who the author was for that course
+
+### Ideas
+- I could also vectorize the interest tags in my User-Score Matrix
+- This would give an additional dynamic where
+    - Users that showed an interest in x, y, and z vectors (binary) 
+    - then scored course n and m with score a and score b
+    - Thus creating a user vector that can be measured against the other user vecotrs
+- Watch-Time or number of views might be interesting for a future model but might not be as relevant to an MVP
+- How complex can I get and still have useful cosine similarity scores?
+
+### If Time Permits
+ - I'd like to investigate using Reinforcement Learning methods such as an Actor-Critic routine as is demonstrated in this 2020 paper, <a href='https://arxiv.org/pdf/1906.04281v2.pdf'>RACT: Towards Amortized Ranking-Critical Training for Collaborative Filtering, ICLR 2020</a> 
 
 
-![image](https://user-images.githubusercontent.com/28716728/137602995-7f8f9a2f-54e8-4bd6-b6f8-15514cbc37d3.png)
 
