@@ -9,6 +9,22 @@ toy program built to use cosine similarity between users and an api built to uti
 - to build a storage of the transformed dataset in DynamoDB
 - to build a model endpoint that will return the most similar users when a user_handle is entered
 
+### Strategy
+
+- I would like to make each course_id its own column
+- and then the users' assessment of each course be the data in that column (as a sparse matrix)
+- and use that to run a cosine similarity between all users
+
+### Obstacles
+- There are not consistent tags offered to connect the actual course_id's to the courses that the students are offering assessment scores of
+- Challenge of aggregating data without overrunning the memory of the instance or machine
+
+### Helpful
+- The views table has the course_id field, allowing us to know 
+    - exactly how long each user viewed a course, and 
+    - how often they viewed a course, and 
+    - who the author was for that course
+
 
 
 ![image](https://user-images.githubusercontent.com/28716728/137602995-7f8f9a2f-54e8-4bd6-b6f8-15514cbc37d3.png)
