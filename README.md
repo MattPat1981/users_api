@@ -39,7 +39,12 @@ toy program built to use cosine similarity between users and an api built to uti
 - How complex can I get and still have useful cosine similarity scores?
 
 ### If Time Permits
- - I'd like to investigate using Reinforcement Learning methods such as an Actor-Critic routine as is demonstrated in this 2020 paper, <a href='https://arxiv.org/pdf/1906.04281v2.pdf'>RACT: Towards Amortized Ranking-Critical Training for Collaborative Filtering, ICLR 2020</a> 
+- I'd like to compare how the Jaccard Score performs using scikit-learn versus the cosine similarity score
+- I'd like to figure out how using NLP might let me 
+    - Impute probable assessments based on view times
+    - Impute probable assessments based on interest tags
+    - use the user_assessment_score as the metric by which to compute user similarities
+- I'd like to investigate using Reinforcement Learning methods such as an Actor-Critic routine as is demonstrated in this 2020 paper, <a href='https://arxiv.org/pdf/1906.04281v2.pdf'>RACT: Towards Amortized Ranking-Critical Training for Collaborative Filtering, ICLR 2020</a> 
 
 
 
