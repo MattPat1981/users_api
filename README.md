@@ -26,6 +26,12 @@ toy program built to use cosine similarity between users and an api built to uti
     - how often they viewed a course, and 
     - who the author was for that course
 
+### Ideas
+- I could also vectorize the interest tags in my User-Score Matrix
+- This would give an additional dynamic where
+    - Users that showed an interest in x, y, and z vectors (binary) 
+    - then scored course n and m with score a and score b
+    - Thus creating a user vector that can be measured against the other user vecotrs
 
 
 ![image](https://user-images.githubusercontent.com/28716728/137602995-7f8f9a2f-54e8-4bd6-b6f8-15514cbc37d3.png)
