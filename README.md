@@ -12,6 +12,7 @@ toy program built to use cosine similarity between users and an api built to uti
 ### Strategy
 
 - I would like to make each course_id its own column
+ - Creating a User-Score Matrix
 - and then the users' assessment of each course be the data in that column (as a sparse matrix)
 - and use that to run a cosine similarity between all users
 
