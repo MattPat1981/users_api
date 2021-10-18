@@ -1,6 +1,9 @@
 # users_api
 toy program built to use cosine similarity between users and an api built to utilize it
 
+### TO SEE THE DATA SCIENCE MODEL WORKING
+Please run the MimmicAPILambda.ipynb from the sandbox branch
+
 The API is not currently working as I need to add Lambda Layers to utilize Pandas in my Lambda Function for the last mile.
 
 Once completed, you can access the API by following this link and changing the final number to the desired user_handle:
