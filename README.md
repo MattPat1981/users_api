@@ -7,7 +7,7 @@ Once completed, you can access the API by following this link and changing the f
 <a href='https://pok2uapqb2.execute-api.us-west-2.amazonaws.com/users_api_dev/myresource?user_handle=42'>https://pok2uapqb2.execute-api.us-west-2.amazonaws.com/users_api_dev/myresource?user_handle=42</a>
 
 ### Application Architecture:
-
+<a href='https://app.cloudcraft.co/view/5fec4251-afee-4f94-b9b6-835acc6b00a0?key=b8beb4cc-f08e-4471-b5ab-cb2780483daa'>3D Rendering of this architecture</a>
 ![image](https://user-images.githubusercontent.com/28716728/137602995-7f8f9a2f-54e8-4bd6-b6f8-15514cbc37d3.png)
 
 ### The goal of this is 
