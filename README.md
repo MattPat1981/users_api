@@ -1,6 +1,11 @@
 # users_api
 toy program built to use cosine similarity between users and an api built to utilize it
 
+The API is not currently working as I need to add Lambda Layers to ustilize Pandas in my Lambda Function for the last mile.
+
+Once completed, you can access the API by following this link and changing the final number to the desired user_handle:
+<a href='https://pok2uapqb2.execute-api.us-west-2.amazonaws.com/users_api_dev/myresource?user_handle=42'>https://pok2uapqb2.execute-api.us-west-2.amazonaws.com/users_api_dev/myresource?user_handle=42</a>
+
 ### Application Architecture:
 
 ![image](https://user-images.githubusercontent.com/28716728/137602995-7f8f9a2f-54e8-4bd6-b6f8-15514cbc37d3.png)
